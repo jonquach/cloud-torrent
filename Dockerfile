@@ -1,9 +1,9 @@
-FROM alpine:3.4
+FROM alpine:3.5
 MAINTAINER dev@jpillora.com
 # prepare go env
 ENV GOPATH /go
 ENV NAME cloud-torrent
-ENV PACKAGE github.com/jpillora/$NAME
+ENV PACKAGE github.com/jonquach/$NAME
 ENV PACKAGE_DIR $GOPATH/src/$PACKAGE
 ENV GOLANG_VERSION 1.7.1
 ENV GOLANG_SRC_URL https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz
